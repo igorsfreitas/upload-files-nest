@@ -13,9 +13,9 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest --config tests/jest.config.ts",
-    "test:watch": "jest --watch --config tests/jest.config.ts",
-    "test:cov": "jest --coverage --config tests/jest.config.ts"
+    "test": "jest --config test/jest.config.ts",
+    "test:watch": "jest --watch --config test/jest.config.ts",
+    "test:cov": "jest --coverage --config test/jest.config.ts"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",

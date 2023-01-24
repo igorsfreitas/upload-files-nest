@@ -10,7 +10,7 @@ const config: Config.InitialOptions = {
   testEnvironment: 'node',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^@tests/(.*)$': '<rootDir>/tests/$1',
+    '^@test/(.*)$': '<rootDir>/test/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/dist/',
@@ -18,7 +18,7 @@ const config: Config.InitialOptions = {
     '<rootDir>/src/config/',
     '<rootDir>/src/utils/',
     '<rootDir>/src/validators/',
-    '<rootDir>/tests/jest.config.ts',
+    '<rootDir>/test/jest.config.ts',
   ],
   coverageDirectory: './coverage',
   collectCoverageFrom: [

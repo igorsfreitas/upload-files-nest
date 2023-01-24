@@ -19,6 +19,9 @@ const config: Config.InitialOptions = {
     '<rootDir>/src/utils/',
     '<rootDir>/src/validators/',
     '<rootDir>/test/jest.config.ts',
+    '<rootDir>/test/mocks/configService.mock.ts',
+    '<rootDir>/test/mocks/httpService.mock.ts',
+    '<rootDir>/test/mocks/repository.mock.ts',
   ],
   coverageDirectory: './coverage',
   collectCoverageFrom: [

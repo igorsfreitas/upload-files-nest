@@ -3,7 +3,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateFileDTO } from '../dto/create-file.dto';
 import { FindFilesDto } from '../dto/find-files.dto';
-// import { FindTutorDto } from '../dto/find-tutor.dto';
 import { File } from '../entities/file.entity';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PDFDocument } from 'pdf-lib';
-import { cleanString } from 'src/commons/clean-string';
+import { cleanString } from '../../commons/clean-string';
 import { FindFilesDto } from './dto/find-files.dto';
 import { FileRepository } from './repositories/file.repository';
 

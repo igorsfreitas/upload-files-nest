@@ -37,7 +37,7 @@ export class FileController {
   }
 
   @Get()
-  async getDocumentsByQuery(@Query() payload: FindFilesDto) {
+  async getDocumentsByQuery(@Query() payload: FindFilesDto): Promise<File[]> {
     return this.fileService.getDocumentsByQuery(payload);
   }
 }

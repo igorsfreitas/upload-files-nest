@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "71e097a8-f0a5-4a86-a0f6-99635a8fe893",
+		"name": "Upload Files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "O arquivo precisa der PDF/PNG/JPG",
+							"type": "file",
+							"src": "/Users/igorfreitas/Downloads/Adesão-2.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/documents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Files by Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/documents?query=Adesão-2.",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"documents"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Adesão-2.",
+							"description": "Retorna uma lista de arquivos com esse nome, independente de letras maiúsculas, minúsculas e acentos."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

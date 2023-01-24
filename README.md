@@ -45,6 +45,10 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
+## Running the app in debug mode
+
+You can simply press F5 on your keyboard to start the application in debug mode.
+
 ## Test
 
 ```bash
@@ -53,6 +57,24 @@ $ yarn run test
 
 # test coverage
 $ yarn run test:cov
+```
+
+## Step by Step to build the project using the Dockerfile
+```bash
+    # build the image
+    docker build . -t upload-files
+
+    # run the image in container
+    docker run -d -p 3000:3000 --name upload-files upload-files
+```
+
+## To Clean your docker envoiroment before new upload-files builds
+```bash
+    # remove the container  
+    docker rm upload-files
+
+    # remove the image
+    docker rmi upload-files
 ```
 
 ## Support

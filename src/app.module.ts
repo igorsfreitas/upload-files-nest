@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppService } from './app.service';
 import { FileModule } from './modules/file/file.module';
 
 @Module({
@@ -13,6 +12,5 @@ import { FileModule } from './modules/file/file.module';
     }),
     FileModule,
   ],
-  providers: [AppService],
 })
 export class AppModule {}
